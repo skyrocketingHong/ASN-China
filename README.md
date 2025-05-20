@@ -27,7 +27,7 @@ rule-providers:
         url: "https://raw.githubusercontent.com/skyrocketingHong/ASN-China/main/ASN.China.list"
         interval: 86400
 rules:
-    - RULE-SET,cnasn,🇨🇳 大陆直连,DIRECT
+    - RULE-SET,cnasn,DIRECT
 ```
 
 ## Data Source
