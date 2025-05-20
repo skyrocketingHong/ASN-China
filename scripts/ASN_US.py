@@ -6,7 +6,7 @@ LastEditTime: 2025-04-19 21:48:59
 FilePath: /ASN-China/scripts/ASN_US.py
 Telegram: https://t.me/missuo
 
-Copyright © 2022 by Vincent, All Rights Reserved. 
+Copyright © 2022 by Vincent, All Rights Reserved.
 '''
 import requests
 from lxml import etree
@@ -32,7 +32,7 @@ def saveLatestASN():
         asnNumber = asn.xpath('td[1]/a')[0].text.replace('AS','')
         asnName = asn.xpath('td[2]')[0].text
         if asnName != None:
-            asnInfo = "IP-ASN,{} // {}".format(asnNumber, asnName)
+            asnInfo = "IP-ASN,{}".format(asnNumber)
             with open("ASN.US.list", "a") as asnFile:
                 asnFile.write(asnInfo)
                 asnFile.write("\n")
